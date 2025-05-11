@@ -2,7 +2,7 @@
 import axios from 'axios'
 import { getSession } from 'next-auth/react'
 
-export const BASA_URL="http://localhost:3001/api"
+export const BASA_URL="https://iamramees.com/api"
 export const S3BUCKET_IMG_URL="https://56u6u6.s3.us-east-1.amazonaws.com"
 
 export const fetchData=axios.create({
