@@ -5,6 +5,11 @@ import { getUserWithEmail, loginWithGoogle } from "./helper/authUser"
 
 console.log(process.env.AUTH_GOOGLE_ID)
 export const { handlers, signIn, signOut, auth } = NextAuth({
+
+  trustHost:true,
+  useSecureCookies:process.env.NODE_ENV==="production",
+  basePath:"/api/auth",
+   
   providers: [
     Google({
       clientId:process.env.AUTH_GOOGLE_ID,
@@ -33,7 +38,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
   ],
   pages:{
     signIn:'/login',
-    error: '/login/error' // Add error page
+    error:'/login/error' // Add error page
     
   },
   callbacks:{
