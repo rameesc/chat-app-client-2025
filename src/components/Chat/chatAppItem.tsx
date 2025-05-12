@@ -49,7 +49,7 @@ useEffect(()=>{
   
   
   return (
-     <div className='flex  gap-[30px]  w-[100%] h-full  p-5 '>
+     <div className='flex  gap-[30px]  w-[100%] h-full  md:p-5 '>
       
        
      

@@ -17,7 +17,7 @@ export const SendButton = ({disabled,sendImage}:LoadingButtonType) => {
     <div >
         <div 
           onClick={sendImage}
-         className='w-[40px] hover:scale-[1.2] icon h-[40px] bg-blue-600 rounded-full flex justify-center items-center'>
+         className='w-[40px] hover:scale-[1.2] icon h-[40px] bg-[#3964da] rounded-full flex justify-center items-center'>
            {!disabled?
              <IoSend size={20}/> 
              :

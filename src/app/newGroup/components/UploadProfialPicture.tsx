@@ -100,7 +100,7 @@ export const GroupFrom = () => {
             <Button
              disabled={isPending}
              type='submit'
-             className=" bg-green-500 hover:bg-green-600"
+             className="bg-[#136d10] hover:bg-[#136d10e7]"
             >
               {isPending ?(
                 <LoadingSpinner

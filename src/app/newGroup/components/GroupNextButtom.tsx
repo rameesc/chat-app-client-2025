@@ -19,7 +19,7 @@ export const GroupNextButtom = () => {
     <div>
       <div 
        onClick={moveToNextSession}
-       className={clsx('flex items-center w-[40px] h-[40px] gap-2  justify-center cursor-pointer text-white  rounded-full font-bold bg-green-700 hover:bg-green-800',
+       className={clsx('flex items-center w-[40px] h-[40px] gap-2  justify-center cursor-pointer text-white  rounded-full font-bold bg-[#136d10] hover:bg-[#136d10e7]',
        isSelectedUser()?'block':"hidden"
       )}>
        

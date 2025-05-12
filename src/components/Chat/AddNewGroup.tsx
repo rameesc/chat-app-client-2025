@@ -18,7 +18,7 @@ export const AddNewGroup = () => {
   return (
     <div className=' bg-white p-2 flex flex-col '>
         <div onClick={()=>moveToCreateNewGroup()} className='p-1 border-2 self-end border-green-500 rounded-full hover:bg-green-600 cursor-pointer '>
-            <p className='text-green-600 hover:text-white'>Create New Group</p>
+            <p className='text-green-600 hover:text-white text-sm'>Create New Group</p>
         </div>
     </div>
   )

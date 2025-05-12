@@ -110,7 +110,7 @@ export const SendMessageForm = () => {
            {form.watch("message").length>0?(
             <Button 
              disabled={isPending}
-             className='cursor-pointer hover:scale-[1.2]'
+             className='cursor-pointer hover:scale-[1.2] bg-black text-white'
              type='submit'>
              <MdSend/>
            </Button>
@@ -119,7 +119,7 @@ export const SendMessageForm = () => {
             <Button
              onClick={()=>setReconding(true)}
              
-             className='cursor-pointer hover:scale-[1.2]'
+             className='cursor-pointer hover:scale-[1.2] bg-black text-white'
            
              type='button'>
              <FaMicrophone/>

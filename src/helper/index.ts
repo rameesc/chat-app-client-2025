@@ -53,7 +53,7 @@ export const isSelectedGroupMembers=(adminArray:string[],userId:string)=>{
 
 export const isBucketImageOrNot=(imageUrl:string)=>{
 
-    const domainName=imageUrl.split('/')[2]
+    const domainName=imageUrl?.split('/')[2]
 
 
   if(process.env.NEXT_PUBLIC_GOOGLE_IMG_DOMAIN==domainName){

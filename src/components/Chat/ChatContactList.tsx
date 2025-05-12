@@ -207,7 +207,7 @@ export const ChatContactList = () => {
 
   return (
     
-    <div  className={clsx('bg-white w-[100%] md:w-[400px] h-full flex flex-col overflow-y-scroll   p-5 ',
+    <div  className={clsx('bg-white w-[100%] md:w-[400px] h-full flex flex-col overflow-y-scroll p-5',
      
     )}>
         

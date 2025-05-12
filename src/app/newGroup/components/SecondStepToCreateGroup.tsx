@@ -6,12 +6,11 @@ import React from 'react'
 
 import { GroupFrom } from './UploadProfialPicture'
 import { ImageEditing } from './ImageEditing'
-import Image from 'next/image'
-import { images } from '@/components/images'
+
 
 export const SecondStepToCreateGroup = () => {
 
-    const {setMoveToNext,openEditeSystem,finalEditingImage}=useStore()
+    const {setMoveToNext,openEditeSystem}=useStore()
 
     const backHandler=()=>{
         setMoveToNext(false)
@@ -32,14 +31,14 @@ export const SecondStepToCreateGroup = () => {
 
         </div>
 
-        <Image
+        {/* <Image
           src={finalEditingImage?URL.createObjectURL(finalEditingImage):images?.user}
           alt='img'
           width={100}
           height={100}
           className='w-[50px] h-[50px]  bg-red-400'
           
-        />
+        /> */}
         <GroupFrom/>
         {openEditeSystem && (
         

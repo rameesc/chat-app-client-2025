@@ -14,7 +14,7 @@ export const ProfialImage = ({image,style}:ProfialImageType) => {
   return (
     <div>
         <Image
-           src={image? image : images.user}
+           src={image? image :images?.user}
            alt='img'
            width={50}
            height={50}

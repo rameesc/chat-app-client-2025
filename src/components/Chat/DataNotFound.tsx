@@ -10,7 +10,7 @@ type DataNotFound={
 export const DataNotFound = ({title}:DataNotFound) => {
   return (
     <div>
-      <p className='text-v-grayText'>{title}</p>
+      <p className='text-v-grayText text-[12px]'>{title}</p>
     </div>
   )
 }

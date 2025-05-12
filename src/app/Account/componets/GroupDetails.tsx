@@ -4,7 +4,7 @@ import { BackButton } from '@/components/Button/BackButton'
 import { DataNotFound } from '@/components/Chat/DataNotFound'
 import { ProfialImage } from '@/components/Chat/ProfialImage'
 import { UserAccountSkeltone } from '@/components/Skeltone/UserAccountSkeltone'
-import { S3BUCKET_IMG_URL } from '@/config'
+
 import { useQuerSingleConversation } from '@/hooks/useQueryConversation'
 import { useRouter } from 'next/navigation'
 import React, { useMemo, useState } from 'react'
@@ -15,10 +15,11 @@ import { ExitFromGroup } from './ExitFromGroup'
 import { GroupMembers } from './GroupMembers'
 import { useUserInformation } from '@/hooks/useUserInformation'
 import { RemoveGroup } from './RemoveGroup'
-import { isAdminOrNot } from '@/helper'
+import { isAdminOrNot, isBucketImageOrNot } from '@/helper'
 import { AddToNewUser } from './AddToNewUser'
 import { CustomPopap } from '@/components/popap/CustomPopap'
 import { SelectGroupMembers } from './SelectGroupMembers'
+import { images } from '@/components/images'
 
 
 export const GroupDetails = () => {
@@ -105,7 +106,7 @@ export const GroupDetails = () => {
            
            <ProfialImage
           
-           image={`${S3BUCKET_IMG_URL}/${data?.groupPicture}` }
+           image={data?.groupPicture? isBucketImageOrNot(data?.groupPicture as string): images?.user }
            style='w-[150px] h-[150px] rounded-full cursor-pointer hover:scale-[0.9] hover:border-green-400 hover:border-2'
            />
           

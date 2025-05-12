@@ -54,7 +54,7 @@ export const ChatContact = ({sender,messageId,date,contact,contactType}:ChatCont
 
   return (
     <div  className={clsx('p-2 rounded-xl',
-     itMeUser(itMe,senderId)  ?"bg-blue-500  self-end ":"bg-white self-start "
+     itMeUser(itMe,senderId)  ?"bg-[#427952]  self-end ":"bg-white self-start "
       
     )}>
 

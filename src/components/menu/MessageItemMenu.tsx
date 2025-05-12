@@ -39,7 +39,7 @@ export const MessageItemMenu = ({itemdeleteId,copyMessageValue}:MessageItemMenuP
           className='rotate-[90deg] cursor-pointer'
          /> 
      </DropdownMenuTrigger>
-      <DropdownMenuContent>
+      <DropdownMenuContent className='bg-white'>
       
        
        <DropdownMenuItem onClick={deleteMessage}>Delete</DropdownMenuItem>

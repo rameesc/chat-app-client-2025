@@ -150,7 +150,7 @@ export const VocieMessageItem = () => {
 
    }
   return (
-    <div className=' s h-[60px] relative w-full flex justify-center flex-col items-center mt-[2px] '>
+    <div className='p-2  fixed bg-white  bottom-0 w-full flex justify-center flex-col items-center mt-[2px] '>
         <div className={clsx('flex justify-center items-center gap-2 ',
             hiddenBtn ?"hidden":"block"
         )}>
@@ -196,9 +196,9 @@ export const VocieMessageItem = () => {
                 <div className='flex gap-2'>
                   <Button 
                    onClick={resumeReconding }
-                   className='hover:bg-red-600 hover:text-green    bg-red-500 text-white cursor-pointer'>
+                   className='hover:bg-red-600 hover:text-green  bg-[#d33838] text-white cursor-pointer'>
                   
-                    <span>Resatrt</span>
+                    <span className=''>Resatrt</span>
                    <MdPause size={22}/>
                   </Button>
                   
@@ -215,7 +215,7 @@ export const VocieMessageItem = () => {
               <IconButton
                 action={pauseReconding}
                 type='button'
-                style='rounded-full w-[35px] h-[35px]   text-white flex justify-center items-center cursor-pointer'
+                style='rounded-full w-[35px] h-[35px] bg-black  text-white flex justify-center items-center cursor-pointer'
                 
                 icon={<FaMicrophone className='text-red-500 blink-animation'/>}
               />
