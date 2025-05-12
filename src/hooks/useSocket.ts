@@ -8,7 +8,7 @@ export const useSocket=()=>{
 
     useEffect(()=>{
          
-        const newSocket:Socket = io(process.env.NEXT_PUBLIC_SOCKET_URL||'http://localhost:3001',{
+        const newSocket:Socket = io(process.env.NEXT_PUBLIC_SOCKET_URL||'https://iamramees.com',{
             withCredentials:true,
             transports:["websocket"],
             
